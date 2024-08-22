@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=New+Amsterdam&family=Noto+Serif+Balinese&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('universe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 2000px;
+}
+
+.wrapper-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.position-logo{
+    padding: 10px;
+}
+
+#logo{
+    width: clamp(50px,10vw,100px);
+}
+
+
+.nav-link{
+    color: white;
+    font-family: 'Press Start 2P','system ui';
+    font-size: clamp(8px,2vw,15px);
+    transition: .3s ease;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    background-image: url('Gumball-cursor.png');
+    background-size: cover;
+    background-position: center;
+    width: 0px;
+    height: 0px;
+    filter: drop-shadow(0px 0px 10px aqua);
+}
+
+.nav-link:hover::after{
+    width: 15px;
+    height: 15px;
+    animation: animateNav 350ms 1 linear;
+}
+
+@keyframes animateNav{
+    from{
+      margin-top: 30px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+
+.nav-link:hover{
+    background: linear-gradient(to top left,aqua,rgb(0, 128, 100));
+    color: transparent;
+    background-clip: text;
+}
+
+.position-images1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-2{
+    padding: 20px;
+}
+
+#title{
+    width: clamp(300px,50vw,800px);
+    height: clamp(200px,30vw,300px);
+    filter: drop-shadow(0px 0px 50px white);
+}
+
+#family{
+    width: clamp(300px,30vw,500px);
+    height: clamp(300px,30vw,500px);
+    filter: drop-shadow(0px 0px 20px rgb(255, 251, 0));
+}
+
+.container-3{
+    filter: drop-shadow(0px 0px 10px white);
+    background-color: rgba(255, 255, 255, 0.825);
+    padding: 20px;
+    font-family: 'Press Start 2P','system ui';
+}
+
+#darwin{
+    width: clamp(140px,30vw,200px);
+}
+
+.wrapper-container3{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-container3 h2{
+    width: 200px;
+    height: 200px;
+    font-size: clamp(3px,2vw,10px);
+}
+
+.container-4{
+    filter: drop-shadow(0px 0px 30px rgb(0, 221, 255));
+    background: linear-gradient(to top left,rgba(255, 255, 255, 0.511),rgba(0, 255, 255, 0.314));
+    padding: 20px;
+    font-family: 'Press Start 2P','system ui';
+}
+
+.container-4 h1{
+    text-align: center;
+    color: white;
+    filter: drop-shadow(0px 0px 5px yellow);
+}
+
+#bg2{
+    margin: 15px;
+    width: clamp(300px,50vw,700px);
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px rgb(17, 16, 16));
+    transition: .2s ease;
+}
+
+#bg2:hover{
+    filter: drop-shadow(0px 0px 10px yellow);
+}
+
+.container-5{
+    padding: 20px;
+}
+
+.wrapper-c5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-c5 h2{
+    font-family: 'Press Start 2P','system ui';
+    color: white;
+    text-align: center;
+    font-size: clamp(15px,2vw,25px);
+    filter: drop-shadow(0px 0px 10px rgb(0, 221, 255));
+}
+
+#anais{
+    filter: drop-shadow(0px 0px 30px black);
+    width: clamp(200px,20vw,350px);
+    height: clamp(200px,20vw,350px);
+}
+
+.container-6{
+    background: linear-gradient(to top left,rgba(228, 5, 228, 0.695),rgb(1, 179, 255));
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 15px aqua);
+}
+
+.wrapper-c6{
+    filter: drop-shadow(0px 0px 15px aqua);
+    background-image: url('gumbal-hold-foto.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: clamp(200px,50vw,600px);
+    height: clamp(200px,50vw,600px);
+    overflow: hidden;
+}
+
+.wrapper-c6 h2{
+    background: linear-gradient(to top ,black , #ff3fef,rgb(169, 77, 255),white);
+    color: transparent;
+    background-clip: text;
+    position: fixed;
+    top: clamp(80%,32vw,80%);
+    left: clamp(-30%,20vw,25%);
+    font-family: 'Press Start 2P','system ui';
+    font-size: clamp(5px,1vw,12px);
+}
+
+.anima-gum{
+    position: fixed;
+    top: clamp(20%,30vw,65%);
+    left: clamp(30%,20vw,70%);
+    background-image: url('richard.png');
+    background-size: clamp(100px,20vw,200px);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: clamp(200px,30vw,300px);
+    height: clamp(200px,30vw,300px);
+}
+
+footer{
+    filter: drop-shadow(0px 0px 20px rgb(0, 94, 255));
+}
+
+.openbtn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Press Start 2P';
+    font-size: clamp(4px,2vw,8px);
+    color: white;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.closebtn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Press Start 2P';
+    font-size: clamp(25px,20vw,30px);
+    color: white;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+@media screen and (min-width:2000px){
+    .wrapper-container{
+        display: grid;
+        place-content: center;
+    }
+}
+
+@media screen and (max-width:600px){
+    .nav{
+        background: linear-gradient(to top left,blue,purple);
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transform: translateX(100em);
+        transition: 1s ease;
+    }
+
+    .openbtn{
+        display: block;
+    }
+
+    .closebtn{
+        display: block;
+        position: relative;
+        top: -35%;
+        left: 38%;
+    }
+
+    .show{
+        transform: translateX(0em);
+    }
+
+    .Turnofthescroll{
+        overflow-y: hidden;
+    }
+
+}

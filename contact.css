@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=New+Amsterdam&family=Noto+Serif+Balinese&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-1{
+    background-image: url('galaxy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    color: white;
+    filter: drop-shadow(0px 0px 5px aqua);
+}
+
+.container-1 h1{
+    font-size: clamp(15px,2vw,30px);
+    filter: drop-shadow(0px 0px 5px aqua);
+}
+
+#gumbal{
+    width: clamp(200px,30vw,400px);
+    filter: drop-shadow(0px 0px 20px aqua)  brightness(110%);
+}
+
+.container-2{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-font{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: white;
+}
+
+span{
+    opacity: 0;
+    font-size: clamp(10px,1vw,28px);
+    filter: drop-shadow(0px 0px 5px aqua);
+    animation: animateFont 5s infinite linear;
+}
+
+span:nth-child(1){
+     animation-delay: 400ms;
+}
+span:nth-child(2){
+    animation-delay: 600ms;
+}
+span:nth-child(3){
+    animation-delay: 800ms;
+}
+span:nth-child(4){
+    animation-delay: 1000ms;
+}
+span:nth-child(5){
+    animation-delay: 1200ms;
+    margin-left: clamp(2px,2vw,30px);
+}
+span:nth-child(6){
+    animation-delay: 1400ms;
+}
+span:nth-child(7){
+    animation-delay: 1600ms;
+}
+span:nth-child(8){
+    animation-delay: 1800ms;
+}
+
+@keyframes animateFont{
+    from{
+        opacity: -1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.wrapper-input{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#txt{
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: transparent;
+    font-family: 'Press Start 2P','system ui';
+    color: aqua;
+    width: clamp(220px,30vw,400px);
+}
+
+#submit{
+    width: clamp(80px,10vw,300px);
+    font-size: clamp(12px,1vw,18px);
+    margin-top: 20px;
+    font-family: 'Press Start 2P','system ui';
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+#submit:hover{
+    box-shadow: 0px 0px 10px aqua;
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=New+Amsterdam&family=Noto+Serif+Balinese&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-c1{
+    background-image: url('universe.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px;
+    filter: drop-shadow(0px 0px 20px rgb(1, 9, 67));
+}
+
+.position-images1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    filter: drop-shadow(0px 0px 20px rgb(0, 174, 255));
+    width: clamp(300px,50vw,500px);
+}
+
+.container-2{
+    padding: 30px;
+}
+
+.wrapper-c2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-c2 h2{
+    margin-top: 20px;
+    font-family: 'Press Start 2P','system ui';
+    text-align: justify;
+    font-size: clamp(10px,3vw,20px);
+}
+
+#Family-1{
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px black);
+    width: clamp(300px,50vw,700px);
+}
+
+.container-3{
+    background-image: url('universe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.position-images2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-c3 h1{
+    text-align: center;
+    font-family: 'Press Start 2P','system ui';
+    color: white;
+    font-size: clamp(15px,3vw,20px);
+    filter: drop-shadow(0px 0px 10px aqua);
+}
+
+#Gumbal1{
+   width: clamp(100px,30vw,200px);
+   filter: drop-shadow(0px 0px 20px white);
+}
+
+.container-4{
+   background-image: url('galaxy.jpg');
+   filter: drop-shadow(0px 0px 20px white);
+   background-size: cover;
+   padding: 20px;
+}
+
+.wrapper-c4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gumball-section,.darwin-section,.anais-section, .nicole-section,.richard-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gumball-section h2 , .darwin-section h2 , .anais-section h2 , .nicole-section h2 , .richard-section h2{
+    text-align: justify;
+    font-family: 'Press Start 2P','system ui';
+    color: white;
+    font-size: clamp(5px,2vw,12px);
+}
+
+#Gumball{
+    filter: drop-shadow(0px 0px 10px aqua);
+}
+
+.darwin-section,.anais-section,.nicole-section,.richard-section{
+    margin-top: 50px;
+}
+
+#darwin{
+    filter: drop-shadow(0px 0px 10px orange);
+}
+
+#anais{
+    width: clamp(200px,30vw,400px);
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 85));
+}
+
+#nicole{
+    filter: drop-shadow(0px 0px 10px aqua);
+}
+
+#richard{
+    filter: drop-shadow(0px 0px 10px rgb(255, 0, 85));
+}
+
+footer{
+    background-image: url('universe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+#footer{
+    width: clamp(300px,50vw,500px);
+    animation: animate 5s infinite linear;
+}
+
+@keyframes animate{
+    0%{
+        filter: drop-shadow(0px 0px 10px yellow);
+    }
+    30%{
+        filter: drop-shadow(0px 0px 10px orange);
+    }
+    50%{
+        filter: drop-shadow(0px 0px 10px aqua);
+    }
+    80%{
+        filter: drop-shadow(0px 0px 10px purple);
+    }
+    100%{
+        filter: drop-shadow(0px 0px 10px rgb(19, 241, 19));
+    }
+}
+
+.backbtn{
+    background-color: rgb(0, 162, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P','system ui';
+    filter: drop-shadow(0px 0px 10px aqua);
+}
+
+.backbtn h1{
+    position: absolute;
+    inset: 15px 18px  ;
+    color: white;
+    font-size: 25px;
+}
+
+.container{
+    max-width: 2000px;
+}
+
+@media screen and (min-width:2000px){
+    .wrapper-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} 
